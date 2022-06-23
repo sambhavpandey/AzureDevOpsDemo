@@ -24,8 +24,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '/home/vsts/work/1/s/webapp/target/'
-    Contents: '**/.war'
+    Contents: '**/*.war'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
